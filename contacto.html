@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="fotoprompt" src="./fotos/prompt.png" alt="">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Capacitación</a></li>
+                <li><a href="explab.html">Experiencia Laboral </a></li>
+                <li><a href="#">Proyectos</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <main>
+        <section>
+            <hr>
+            <h2 class="titulopagina">Formulario de contacto</h2><br><hr><br>
+            <form action="">
+               <br>
+                <div class="form">
+                    <label for="email"></label>
+                    <input type="email" size="108" width="25" name="email" placeholder="E-Mail-----@-----" required>
+                    <a href="mailto:aristides.moyano@gmail.com"></a>
+                </div>
+                <br>
+                <div class="form">
+                    <label for="telefono"></label>
+                    <input type="text" size="108" width="25" name="telefono" placeholder="TELEFONO">
+                </div>
+                <br>
+                <!--<div class="form">
+                    <label for="Nombre"></label>
+                    <input type="text" size="51" width="25" name="nombre" placeholder="NOMBRE"><br>
+                </div>-->
+                   <div class="form">
+                    <label for="Nombre"></label>
+                    <input type="text" size="51" width="25" name="nombre" placeholder="NOMBRE">
+                    <label for="Apellido"></label>
+                    <input type="text" size="52" width="25" name="apellido" placeholder="APELLIDO">
+                </div>
+                    <br>                 
+                <div class="form">
+                    <label for="comentario"></label><br>
+                    <textarea name="comentario" id="" cols="100" rows="10" placeholder="DEJE SUS COMENTARIOS"></textarea>
+                </div>
+                                <br>                                       
+                <div class="botonform">
+                    <input type="submit" value="Enviar Datos" >
+                    <input type="reset" value="Borrar Datos">
+                </div>
+            </form>
+        </section>
+    </main>
+<br>
+<br>
+<br>
+<br>
+
+    <footer>
+        <hr>
+        <h6>
+            Desarrollado para mi persona el 
+            <!--<time datetime="new date">fecha acutal</time>-->
+            <div id="current_date"></p>
+                <script>
+                date = new Date();
+                year = date.getFullYear();
+                month = date.getMonth() + 1;
+                day = date.getDate();
+                document.getElementById("current_date").innerHTML =  day + "/" + month + "/" + year;
+                </script>
+        </h6>
+    </footer>
+</body>
+</html>

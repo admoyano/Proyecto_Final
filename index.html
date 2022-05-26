@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i.ibb.co/PZfk1FJ/favicon-32x32.png">
+    <title>Mi CV en linea por Arístides D. Moyano</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="fotoprompt" src="https://i.ibb.co/Q8rJXbF/prompt.png" alt="">
+        <nav>
+            <ul class="menu">
+                <!--<li><a href="#">Home</a></li>-->
+                
+                <li><a href="#">Capacitación</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="explab.html">Experiencia Laboral </a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                
+            </ul>
+        </nav> 
+    </header>  
+    
+    <main>
+        <section>
+            <h2 class="quiensoy">Información sobre Quien soy</h2>
+            <div class="avatar">
+                <!-- Avatar image -->
+                <img class="avatar__image" src="https://i.ibb.co/74yxnwN/56105993-275455720009257-3617651198233935872-n.jpg" />
+            </div>
+                        
+                       
+            <p class="primero"> 06 DE OCTUBRE 1996 – OCUPACION ACTUAL
+                PUESTO ACTUAL COORDINADOR MESA DE SERVICIOS DE TI., DISTRIBUIDORA DE GAS DEL CENTRO S.A Y DISTRIBUIDORA DE GAS CUYANA S.A. 
+                En el año 1996 ingrese para la implementación de un nuevo sistema, colaborando con los pasos iniciales del mismo, desde carga de tablas hasta pruebas de las distintas interfaces del mismo.  Posterior a la implementación del mismo a finde de 1998, continúe mi trabajo en el área técnica de Distribuidora de Gas del Centro S.A desarrollando las siguientes actividades:
+                Administrativo.
+                Confección de Planillas en Microsoft Excel y Microsoft Word.
+                Programación con Visual Basic para aplicaciones (Microsoft Excel).
+                Implementación de Nuevo Sistema.
+                Proceso de Migración de Bases de Datos.
+                Pruebas de Migración de datos y Funcionamiento General del Sistema de Gestión comercial de la empresa.
+                Ocasionalmente confección de diagramas Gant, Pert , Diagramas de Flujo, etc.
+                Entorno de Estaciones de Trabajo hasta Windows 10, Servidores hasta 2012.
+                Manejo SAP.
+                Certificaciones a Contratistas.
+                Control de Documentación y Planos de Obras de Redes de Gas.
+                Control de Documentación y Planos de Instalaciones Internas de Gas.
+            </p>
+            <br>
+            <br>
+            <div class="iconos">
+                <table border="0" cellpading="20" cellspacing="2">
+                    <tr>
+                        <th>
+                            <a href="https://www.linkedin.com/in/aristides-daniel-moyano-247a09100/"><img src="https://i.ibb.co/71ppnKr/linkedin.png"></a>
+                            <a href="https://www.facebook.com/aristides.moyano/"><img src="https://i.ibb.co/8zvB0Db/facebook.png"></a>
+                        </th> 
+                    </tr>
+                </table>  
+                <table border="0" cellpading="20" cellspacing="2">
+                    <tr>
+                        <th>
+                            <a href="contacto.html"><img src="https://i.ibb.co/zrt2C5x/mail.png"></a>
+                            <a href="https://www.instagram.com/aristidesmoyano/?hl=es"><img src="https://i.ibb.co/ch2rKTp/instagram.png"></a>
+                        </th> 
+                   </tr>
+                </table>
+            </div>
+        </section>
+        
+        
+    </main>
+
+    <footer>
+        <hr>
+        <h6>
+            Desarrollado para mi persona el 
+            <!--<time datetime="new date">fecha acutal</time>-->
+            <div id="current_date"></p>
+                <script>
+                date = new Date();
+                year = date.getFullYear();
+                month = date.getMonth() + 1;
+                day = date.getDate();
+                document.getElementById("current_date").innerHTML =  day + "/" + month + "/" + year;
+                </script>
+        </h6>
+    </footer>
+</body>
+</html>
