@@ -102,8 +102,6 @@ body{
     border: 20px;
 }
 .avatar{
-    /* Rounded border */
-    /*border-radius: 50%;*/
     height: 64px;
     width: 64px;
 }
@@ -141,18 +139,7 @@ footer{
     height:50px;
     text-align: center;
 }
-/*.lab{
-    background-color: rgb(220, 240, 245);
-    width: 400px;
-    height: 250px;
-    margin: 5px 10px 12px 50px;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-    overflow: auto;
-    border: 25px #5f0a87;
-    padding: 25;
-    
-}*/
+
 .detallelabinv{
     display: flex;
     flex-direction: row;
@@ -170,7 +157,22 @@ footer{
 .detalleimagenlab{
     width: 100px;
 }
-.fotoexp{
+.fotoexp1{
+    width: 100px;
+    border-radius: 50%;
+   
+}
+.fotoexp2{
+    width: 100px;
+    border-radius: 50%;
+   
+}
+.fotoexp2 :hover{
+    width: 200px;
+    transform: translateY(17px);
+}
+
+.fotoexp3{
     width: 100px;
     border-radius: 50%;
    
