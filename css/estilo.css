@@ -1,35 +1,40 @@
-header {
-  background-color: #f1f7f7; }
-  header .fotoprompt {
-    width: 50px;
-    height: 45px;
-    border-radius: 25%; }
-  header .menu {
-    list-style: none;
-    margin: auto;
-    background-color: #f1f7f7;
-    display: flex;
-    justify-content: flex-end;
-    padding: 12px; }
-    header .menu li {
-      text-align: center;
-      margin: 10px;
-      padding: 10px; }
-      header .menu li a {
-        text-decoration: none;
-        background-color: white;
-        color: #070707;
-        padding: 10px;
-        font-family: 'Oswald', sans-serif;
-        font-size: large;
-        align-items: center; }
-        header .menu li a:hover {
-          color: #0e0e0e;
-          text-decoration: double;
-          font-style: oblique; }
-      header .menu li :hover {
-        background-color: none;
-        transform: translateY(-7px); }
+* {
+  margin: 0ch;
+  padding: 0;
+  box-sizing: border-box; }
+
+header .fotoprompt {
+  width: 50px;
+  height: 45px;
+  border-radius: 25%;
+  color: #f1f7f7; }
+
+header .menu {
+  list-style: none;
+  margin: auto;
+  background-color: #f1f7f7;
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px; }
+  header .menu li {
+    text-align: center;
+    margin: 10px;
+    padding: 10px; }
+    header .menu li a {
+      text-decoration: none;
+      background-color: white;
+      color: #070707;
+      padding: 10px;
+      font-family: 'Oswald', sans-serif;
+      font-size: large;
+      align-items: center; }
+      header .menu li a:hover {
+        color: #0e0e0e;
+        text-decoration: double;
+        font-style: oblique; }
+    header .menu li :hover {
+      background-color: none;
+      transform: translateY(-7px); }
 
 footer {
   font-size: 15px;
@@ -41,8 +46,106 @@ body {
   max-width: 1000px !important;
   margin: auto; }
 
-main .titulopagina {
+.titulopagina {
   font-family: 'Lato', sans-serif;
   color: #0d0d0d;
   text-align: center;
   size: 70%; }
+
+.fotoexp {
+  width: 200px;
+  height: 200px;
+  border-radius: 25%; }
+
+.contenedormain {
+  width: 90%;
+  display: grid;
+  grid-row: row;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "main aside"; }
+  .contenedormain .main {
+    background-color: none;
+    padding: 1.2rem;
+    grid-area: main; }
+    .contenedormain .main h2 {
+      font-family: 'Oswald', sans-serif; }
+  .contenedormain .aside {
+    width: 60%;
+    height: 70%;
+    padding: 1.2rem;
+    transition: all 2seg ease;
+    border-radius: 25%;
+    display: grid;
+    grid-area: aside; }
+    .contenedormain .aside:hover {
+      border-radius: 0%;
+      width: 110%;
+      height: 120%; }
+
+.contenedormain2 {
+  width: 90%;
+  display: grid;
+  grid-row: row;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "aside2 main2"; }
+  .contenedormain2 .main2 {
+    background-color: none;
+    padding: 1.2rem;
+    grid-area: main2; }
+    .contenedormain2 .main2 h2 {
+      font-family: 'Oswald', sans-serif; }
+  .contenedormain2 .aside2 {
+    display: grid;
+    width: 60%;
+    height: 70%;
+    border-radius: 25%;
+    grid-area: aside2; }
+    .contenedormain2 .aside2:hover {
+      transform: translateY(17px); }
+
+.contenedormain3 {
+  width: 90%;
+  display: grid;
+  grid-row: row;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "main3 aside3"; }
+  .contenedormain3 .main3 {
+    background-color: none;
+    padding: 1.2rem;
+    grid-area: main3; }
+    .contenedormain3 .main3 h2 {
+      font-family: 'Oswald', sans-serif; }
+  .contenedormain3 .aside3 {
+    width: 90%;
+    padding: 1.2rem;
+    display: grid;
+    border-radius: 25%;
+    grid-area: aside3; }
+    .contenedormain3 .aside3:hover {
+      transform: scale(1.2, 1.2);
+      border-radius: 0%; }
+
+@media screen and (max-width: 600px) {
+  .contenedorvar {
+    height: 325px;
+    margin: -10px;
+    padding: -10px;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "logo header"; }
+  .contenedormain {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 2fr auto auto;
+    grid-template-areas: "contenedorvar" "aside" "main"; }
+  .contenedormain2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 2fr auto auto;
+    grid-template-areas: "contenedorvar" "aside2" "main2"; }
+  .contenedormain3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 2fr auto auto;
+    grid-template-areas: "contenedorvar" "aside3" "main3"; } }

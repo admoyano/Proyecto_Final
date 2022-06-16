@@ -1,19 +1,149 @@
+*{margin: 0ch;
+    padding: 0;
+    box-sizing: border-box;
+  }
 $colorfondo: rgb(241, 247, 247);
+$colorpagina: radial-gradient(circle at 51.54% 46.7%, #ffffff 0, #ffffff 12.5%, #ffffff 25%, #ffffff 37.5%, #f9f2f2 50%, #dee3e2 62.5%, #c6d5d3 75%, #b2c9c4 87.5%, #a3bfb6 100%); 
 @import "header";
 @import "footer";
 
+
 body{
-    background-image: radial-gradient(circle at 51.54% 46.7%, #ffffff 0, #ffffff 12.5%, #ffffff 25%, #ffffff 37.5%, #f9f2f2 50%, #dee3e2 62.5%, #c6d5d3 75%, #b2c9c4 87.5%, #a3bfb6 100%); 
+    background-image: $colorpagina;
     max-width: 1000px !important;
     margin:auto;
 }
 
-main{
-    .titulopagina{
-        font-family: 'Lato', sans-serif;
-        color: rgb(13, 13, 13);
-        text-align: center;
-        size: 70%;
+.titulopagina{
+    font-family: 'Lato', sans-serif;
+    color: rgb(13, 13, 13);
+    text-align: center;
+    size: 70%;
+}
+.fotoexp{
+    width: 200px;
+    height: 200px;
+    border-radius: 25%;
+}
+ 
+@mixin contecuerpo{
+    width: 90%;
+    display:grid;
+    grid-row: row;
+    grid-template-rows: 1fr;
+}
+@mixin mainexplab {
+    background-color: none;
+    padding: 1.2rem;
+    h2{
+        font-family: 'Oswald', sans-serif;
+    }   
+}
+
+.contenedormain{
+    @include contecuerpo;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+    "main aside";
+    .main{
+        @include mainexplab;
+        grid-area: main;
+    }
+    .aside{
+        width: 60%;
+        height: 70%;
+        padding: 1.2rem;
+        transition: all 2seg ease;
+        border-radius: 25%;
+        display:grid;
+        grid-area: aside;
+        &:hover{
+            border-radius: 0%;
+            width: 110%;
+            height: 120%;
+        }
+    }
+    
+}
+.contenedormain2{
+    @include contecuerpo;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+    "aside2 main2";
+    .main2{
+        @include mainexplab;
+        grid-area: main2;
+    }
+    .aside2{
+        display:grid;
+        width: 60%;
+        height: 70%;
+        border-radius: 25%;
+        grid-area: aside2;
+        &:hover{
+            transform: translateY(17px);
+        }
+    
     }
 }
+.contenedormain3{
+    @include contecuerpo;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+    "main3 aside3";
+    .main3{
+        @include mainexplab;
+        grid-area: main3;
+    }
+    .aside3{
+        width: 90%;
+        padding: 1.2rem;
+        display:grid;
+        border-radius: 25%;
+        grid-area: aside3;
+        &:hover{
+          transform: scale(1.2,1.2);
+          border-radius: 0%;
+        }
     
+    }
+}
+@media screen and (max-width:600px){
+    .contenedorvar{
+        height: 325px;
+        margin: -10px;
+        padding: -10px;
+        flex-wrap: wrap;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+        "logo header";
+                             
+    }
+
+    .contenedormain{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 2fr auto auto;
+        grid-template-areas: 
+        "contenedorvar"
+        "aside"
+        "main"
+    }
+    .contenedormain2{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 2fr auto auto;
+        grid-template-areas: 
+        "contenedorvar"
+        "aside2"
+        "main2" 
+    }
+    .contenedormain3{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 2fr auto auto;
+        grid-template-areas: 
+        "contenedorvar"
+        "aside3"
+        "main3" 
+    }
+    
+}

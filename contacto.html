@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i.ibb.co/PZfk1FJ/favicon-32x32.png">
     <title>Contacto Arístides D. Moyano</title>
     <meta name="description" content="Información Laboral Arístides D. Moyano">
     <meta name="keywords"  content="HTML, ASP, JS, META, Arístides, Moyano, Información, Currilucum, Vitae">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
@@ -17,57 +20,84 @@
 </head>
 <body>
     <header>
-        <img class="fotoprompt" src="https://i.ibb.co/Q8rJXbF/prompt.png" alt="">
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="capacitacion.html">Capacitación</a></li>
-                <li><a href="explab.html">Experiencia Laboral </a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-            </ul>
-        </nav> 
+        <div class="row">
+            <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img class="fotoprompt" src="https://i.ibb.co/Q8rJXbF/prompt.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav menu">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="capacitacion.html">Capacitacion</a>
+                  </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="proyectos.html">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="explab.html">Experiencia Laboral</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav> 
     </header>
     <main>
         <div class="col-12 p-3">        
             <hr>
             <h2 class="titulopagina">Formulario de Contacto</h2><hr><br>
-          </div>
+        </div>
         <section>
+            <form class="row g-3">       
+                <div class="col-md-12">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" required>
+                </div>
+                <div class="col-md-12">
+                  <label for="text" class="form-label">Telefono/s</label>
+                  <input type="phone" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-6">
+                  <label for="text" class="form-label">Nombre/s</label>
+                  <input type="text" class="form-control" required>
+                </div>
+                <div class="col-6">
+                    <label for="text" class="form-label">Apellido/s</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="col-12">
+                  <p><label for="mensaje">Mensaje</label><br />
+                  <span class="form-label"><textarea name="mensaje" cols="40" rows="10" class="form-control" aria-invalid="false" required></textarea></span> </p>
+                </div>
+
+                <div class="col-12">
+                  <button type="submit" class="btn btn-success opacity-25">Enviar</button>
+                  <button type="reset" class="btn btn-danger">Borrar</button>
+                </div>
+
+                
+            </form>
+              
+                         
             
-            <form action="">
-               <br>
-                <div class="form">
-                    <label for="email"></label>
-                    <input type="email" size="108" width="25" name="email" placeholder="E-Mail-----@-----" required>
-                    <a href="mailto:aristides.moyano@gmail.com"></a>
-                </div>
-                <br>
-                <div class="form">
-                    <label for="telefono"></label>
-                    <input type="text" size="108" width="25" name="telefono" placeholder="TELEFONO">
-                </div>
-                <br>
-                <!--<div class="form">
-                    <label for="Nombre"></label>
-                    <input type="text" size="51" width="25" name="nombre" placeholder="NOMBRE"><br>
-                </div>-->
-                   <div class="form">
-                    <label for="Nombre"></label>
-                    <input type="text" size="51" width="25" name="nombre" placeholder="NOMBRE">
-                    <label for="Apellido"></label>
-                    <input type="text" size="52" width="25" name="apellido" placeholder="APELLIDO">
-                </div>
-                    <br>                 
+              
+
+
+
+
+
+
+            <!--<form action="">
                 <div class="form">
                     <label for="comentario"></label><br>
                     <textarea name="comentario" id="" cols="100" rows="10" placeholder="DEJE SUS COMENTARIOS"></textarea>
                 </div>
-                                <br>                                       
-                <div class="botonform">
-                    <input type="submit" value="Enviar Datos" >
-                    <input type="reset" value="Borrar Datos">
-                </div>
-            </form>
+                 <br>                                       
+            </form>-->
         </section>
     </main>
 <br>
@@ -75,7 +105,7 @@
 <br>
 <br>
 
-    <footer class="footer">
+    <footer>
         <hr>
         <h6>
             Desarrollado para mi persona el 
