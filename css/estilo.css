@@ -36,6 +36,11 @@ header .menu {
       background-color: none;
       transform: translateY(-7px); }
 
+.navbar-toggler {
+  background-color: whitesmoke; }
+  .navbar-toggler .navbar-toggler-icon {
+    background-color: #def7ee; }
+
 footer {
   font-size: 15px;
   font-family: 'Oswald', sans-serif;
@@ -46,16 +51,46 @@ body {
   max-width: 1000px !important;
   margin: auto; }
 
-.titulopagina {
+.titulopagina1 {
   font-family: 'Lato', sans-serif;
   color: #0d0d0d;
   text-align: center;
   size: 70%; }
 
+.titulopagina2 {
+  font-family: 'Lato', sans-serif;
+  color: #0d0d0d;
+  text-align: center;
+  size: 70%;
+  font-family: 'Bebas Neue', cursive; }
+
 .fotoexp {
   width: 200px;
   height: 200px;
   border-radius: 25%; }
+
+.avatar {
+  height: 64px;
+  width: 64px; }
+  .avatar .avatar__image {
+    border-radius: 50%;
+    height: 280px;
+    width: 280px;
+    /*position: relative;
+    top: 130px;
+    left: 600px;*/ }
+
+.iconos {
+  display: flex;
+  justify-content: space-around;
+  height: 280px;
+  width: 280px; }
+
+.iconos img {
+  height: 100px;
+  width: 100px; }
+  .iconos img:hover {
+    transform: translateY(-7px); }
 
 .contenedormain {
   width: 90%;
@@ -70,6 +105,15 @@ body {
     grid-area: main; }
     .contenedormain .main h2 {
       font-family: 'Oswald', sans-serif; }
+    .contenedormain .main .primero {
+      background-color: #dcf0f5;
+      width: 400px;
+      height: 650px;
+      font-size: 20px;
+      font-family: 'Oswald', sans-serif;
+      overflow: auto;
+      border: 25px #5f0a87;
+      padding: 25; }
   .contenedormain .aside {
     width: 60%;
     height: 70%;
@@ -79,9 +123,8 @@ body {
     display: grid;
     grid-area: aside; }
     .contenedormain .aside:hover {
-      border-radius: 0%;
-      width: 110%;
-      height: 120%; }
+      transform: translateY(-7px);
+      border-radius: 0%; }
 
 .contenedormain2 {
   width: 90%;
@@ -129,23 +172,15 @@ body {
       border-radius: 0%; }
 
 @media screen and (max-width: 600px) {
-  .contenedorvar {
-    height: 325px;
-    margin: -10px;
-    padding: -10px;
-    flex-wrap: wrap;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: "logo header"; }
   .contenedormain {
     grid-template-columns: 1fr;
-    grid-template-rows: auto 2fr auto auto;
-    grid-template-areas: "contenedorvar" "aside" "main"; }
+    grid-template-rows: auto 2fr;
+    grid-template-areas: "aside" "main"; }
   .contenedormain2 {
     grid-template-columns: 1fr;
     grid-template-rows: auto 2fr auto auto;
-    grid-template-areas: "contenedorvar" "aside2" "main2"; }
+    grid-template-areas: "aside2" "main2"; }
   .contenedormain3 {
     grid-template-columns: 1fr;
     grid-template-rows: auto 2fr auto auto;
-    grid-template-areas: "contenedorvar" "aside3" "main3"; } }
+    grid-template-areas: "aside3" "main3"; } }

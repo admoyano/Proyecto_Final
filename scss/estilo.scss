@@ -13,19 +13,60 @@ body{
     max-width: 1000px !important;
     margin:auto;
 }
-
-.titulopagina{
+@mixin formtitulo {
     font-family: 'Lato', sans-serif;
     color: rgb(13, 13, 13);
     text-align: center;
     size: 70%;
+}
+.titulopagina1{
+    @include formtitulo;
+}
+.titulopagina2{
+    @include formtitulo;
+    font-family: 'Bebas Neue', cursive;
+    
 }
 .fotoexp{
     width: 200px;
     height: 200px;
     border-radius: 25%;
 }
- 
+
+
+.avatar{
+    height: 64px;
+    width: 64px;
+    .avatar__image{
+    border-radius: 50%;
+    height: 280px;
+    width: 280px;
+    /*position: relative;
+    top: 130px;
+    left: 600px;*/}
+    
+}
+
+
+
+.iconos{
+        display: flex;
+        justify-content:space-around;
+        height: 280px;
+        width: 280px;
+        
+
+}
+.iconos img{
+    height: 100px;
+    width: 100px;
+    &:hover{
+        transform: translateY(-7px);
+    }
+}
+    
+
+
 @mixin contecuerpo{
     width: 90%;
     display:grid;
@@ -48,7 +89,20 @@ body{
     .main{
         @include mainexplab;
         grid-area: main;
+        .primero{
+            background-color: rgb(220, 240, 245);
+            width: 400px;
+            height: 650px;
+            
+            font-size: 20px;
+            font-family: 'Oswald', sans-serif;
+            overflow: auto;
+            border: 25px #5f0a87;
+            padding: 25;
+        }
+       
     }
+
     .aside{
         width: 60%;
         height: 70%;
@@ -58,9 +112,9 @@ body{
         display:grid;
         grid-area: aside;
         &:hover{
+            transform: translateY(-7px);
             border-radius: 0%;
-            width: 110%;
-            height: 120%;
+            
         }
     }
     
@@ -109,41 +163,31 @@ body{
     }
 }
 @media screen and (max-width:600px){
-    .contenedorvar{
-        height: 325px;
-        margin: -10px;
-        padding: -10px;
-        flex-wrap: wrap;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 1fr auto;
-        grid-template-areas:
-        "logo header";
-                             
-    }
+    
 
     .contenedormain{
         grid-template-columns: 1fr;
-        grid-template-rows: auto 2fr auto auto;
+        grid-template-rows: auto 2fr;
         grid-template-areas: 
-        "contenedorvar"
+      
         "aside"
-        "main"
+        "main";
     }
     .contenedormain2{
         grid-template-columns: 1fr;
         grid-template-rows: auto 2fr auto auto;
         grid-template-areas: 
-        "contenedorvar"
+        
         "aside2"
-        "main2" 
+        "main2";
     }
     .contenedormain3{
         grid-template-columns: 1fr;
         grid-template-rows: auto 2fr auto auto;
         grid-template-areas: 
-        "contenedorvar"
+        
         "aside3"
-        "main3" 
+        "main3";
     }
     
 }
