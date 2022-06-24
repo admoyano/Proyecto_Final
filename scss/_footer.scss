@@ -1,5 +1,17 @@
 footer{
     font-size: 15px;
     font-family: 'Oswald', sans-serif;
-    text-align: center;
+    text-align: right;
+    .iconosfooter{
+        display: flex;
+    }
+        .iconosfooter img{
+            height: 40px;
+            width: 40px;
+            &:hover{
+                transform: translateY(-7px);
+               
+            }
+        }
 }
+

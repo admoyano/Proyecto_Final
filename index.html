@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -22,7 +25,7 @@
         <div class="row">
             <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img class="fotoprompt" src="https://i.ibb.co/Q8rJXbF/prompt.png" alt=""></a>
+              <a class="navbar-brand" href="index.html"><img class="fotoprompt" src="https://i.ibb.co/Q8rJXbF/prompt.png" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" ></span>
               </button>
@@ -46,17 +49,16 @@
           </nav>
     </header>  
     
-
-    <main>
-      <div class="col-12 p-3">        
-        <hr>
-        <h2 class="titulopagina2">Información sobre Quién soy</h2><hr><br>
-      </div>
+   <main>
       <div class="row">
+        <div class="col-12 p-3">        
+          <hr>
+          <h2 class="titulopagina2">Información sobre Quién soy</h2><hr><br>
+        </div>
         <div class="col-sm-6">
           <div class="card">
-            <div class="card-body">
-              <p class="primero">06 DE OCTUBRE 1996 – OCUPACION ACTUAL
+            <div class="card-body primero">
+              <p>06 DE OCTUBRE 1996 – OCUPACION ACTUAL
                 PUESTO ACTUAL COORDINADOR MESA DE SERVICIOS DE TI., DISTRIBUIDORA DE GAS DEL CENTRO S.A Y DISTRIBUIDORA DE GAS CUYANA S.A. 
                 En el año 1996 ingrese para la implementación de un nuevo sistema, colaborando con los pasos iniciales del mismo, desde carga de tablas hasta pruebas de las distintas interfaces del mismo.  Posterior a la implementación del mismo a finde de 1998, continúe mi trabajo en el área técnica de Distribuidora de Gas del Centro S.A desarrollando las siguientes actividades:
                 Administrativo.
@@ -74,49 +76,50 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="avatar" style="width: 18rem;">
-            <img class="avatar__image" src="https://i.ibb.co/74yxnwN/56105993-275455720009257-3617651198233935872-n.jpg"  alt="...">
-               
-          <h5 class="card-title">Seguime en:</h5>
-          <div class="iconos">
-            <table cellpading="20" cellspacing="2">
+        <div class="col-sm-6 centrado">
+            <img class="avatar__image" src="https://i.ibb.co/yFKLrZn/1650448270077.jpg"  alt="...">
+            <h5 class="card-title">Seguime en:</h5>
+            <div class="iconos">
+              <table cellpading="20" cellspacing="2">
                     <tr>
                       <th>
                         <a href="https://www.linkedin.com/in/aristides-daniel-moyano-247a09100/" target=”_blank”><img src="https://i.ibb.co/71ppnKr/linkedin.png"></a>
                         <a href="https://www.facebook.com/aristides.moyano/" target=”_blank”><img src="https://i.ibb.co/8zvB0Db/facebook.png"></a>
                       </th> 
                     </tr>
-            </table>  
-            <table  cellpading="20" cellspacing="2">
+              </table>  
+              <table  cellpading="20" cellspacing="2">
                         <tr>
                             <th>
                                 <a href="contacto.html"><img src="https://i.ibb.co/zrt2C5x/mail.png"></a>
                                 <a href="https://www.instagram.com/aristidesmoyano/?hl=es" target=”_blank”><img src="https://i.ibb.co/ch2rKTp/instagram.png"></a>
                             </th> 
                        </tr>
-            </table>
-          </div>
-        </div>
+              </table>
+            </div>
         </div>
       </div>
     </main>
-    <br>
-    <br>
+  
+
     <footer>
-        <hr>
-        <h6>
-          Desarrollado para mi persona el 
-             <div id="current_date"></p>
-              <script>
-              date = new Date();
-              year = date.getFullYear();
-              month = date.getMonth() + 1;
-              day = date.getDate();
-              document.getElementById("current_date").innerHTML =  day + "/" + month + "/" + year;
-              </script>
-        </h6>
-      
+      <div class="row">
+        <div class="col-12 p-3">        
+          <hr>
+          <h6>
+           Hoy es:  
+                <div id="current_date"></p>
+                <script>
+                date = new Date();
+                year = date.getFullYear();
+                month = date.getMonth() + 1;
+                day = date.getDate();
+                document.getElementById("current_date").innerHTML =  day + "/" + month + "/" + year;
+                </script>
+          </h6>
+        </div>
+    </div>
+
     </footer>
     
     

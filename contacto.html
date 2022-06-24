@@ -18,12 +18,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="cuerpocontacto">
     <header>
         <div class="row">
             <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img class="fotoprompt" src="https://i.ibb.co/Q8rJXbF/prompt.png" alt=""></a>
+              <a class="navbar-brand" href="index.html"><img class="fotoprompt" src="https://i.ibb.co/Q8rJXbF/prompt.png" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -88,20 +88,37 @@
 <br>
 <br>
 
-    <footer>
-        <hr>
+<footer>
+  <hr>
+  <div class="row">
+    <div class="col-6 p-3">
+      <table class="iconosfooter" cellpading="2" cellspacing="2">
+        <tr>
+          <th>
+            <p>Seguime en:</p>
+            <a href="https://www.linkedin.com/in/aristides-daniel-moyano-247a09100/" target=”_blank”><img src="https://i.ibb.co/71ppnKr/linkedin.png"></a>
+            <a href="https://www.facebook.com/aristides.moyano/" target=”_blank”><img src="https://i.ibb.co/8zvB0Db/facebook.png"></a>
+            <a href="https://www.instagram.com/aristidesmoyano/?hl=es" target=”_blank”><img src="https://i.ibb.co/ch2rKTp/instagram.png"></a>
+          </th> 
+        </tr>
+      </table>  
+    </div>
+    <div class="col-6 p-3">        
         <h6>
-            Desarrollado para mi persona el 
-                <div id="current_date"></p>
-                <script>
-                date = new Date();
-                year = date.getFullYear();
-                month = date.getMonth() + 1;
-                day = date.getDate();
-                document.getElementById("current_date").innerHTML =  day + "/" + month + "/" + year;
-                </script>
+          Desarrollado para mi persona el 
+            <div id="current_date"></p>
+            <script>
+            date = new Date();
+            year = date.getFullYear();
+            month = date.getMonth() + 1;
+            day = date.getDate();
+            document.getElementById("current_date").innerHTML =  day + "/" + month + "/" + year;
+            </script>
         </h6>
-    </footer>
+    </div>
+  </div>
+
+</footer>
         <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

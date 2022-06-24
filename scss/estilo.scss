@@ -3,11 +3,10 @@
     box-sizing: border-box;
   }
 $colorfondo: rgb(241, 247, 247);
-$colorpagina: radial-gradient(circle at 51.54% 46.7%, #ffffff 0, #ffffff 12.5%, #ffffff 25%, #ffffff 37.5%, #f9f2f2 50%, #dee3e2 62.5%, #c6d5d3 75%, #b2c9c4 87.5%, #a3bfb6 100%); 
+$colorpagina: radial-gradient(circle at 51.54% 46.7%, #ffffff 0, #ffffff 12.5%, #ffffff 25%, #ffffff 37.5%, #f9f2f2 50%, #dee3e2 62.5%, #c6d5d3 75%, #b2c9c4 87.5%, #a3bfb6 100%);
+$colorletraverde: rgb(114, 142, 114);
 @import "header";
 @import "footer";
-
-
 body{
     background-image: $colorpagina;
     max-width: 1000px !important;
@@ -24,38 +23,35 @@ body{
 }
 .titulopagina2{
     @include formtitulo;
-    font-family: 'Bebas Neue', cursive;
-    
+    font-family: 'Bebas Neue', cursive; 
+}
+.textoverde{
+    color: $colorletraverde;
+}
+
+.centrado{
+  position: relative;  
+  align-items: center;
 }
 .fotoexp{
     width: 200px;
     height: 200px;
     border-radius: 25%;
 }
-
-
-.avatar{
-    height: 64px;
-    width: 64px;
-    .avatar__image{
+.primero{
+    font-family: 'Playfair Display', serif;
+    color: $colorletraverde;
+    text-align: justify;
+}
+.avatar__image{
     border-radius: 50%;
     height: 280px;
     width: 280px;
-    /*position: relative;
-    top: 130px;
-    left: 600px;*/}
-    
 }
-
-
-
 .iconos{
-        display: flex;
-        justify-content:space-around;
+        display:contents;
         height: 280px;
         width: 280px;
-        
-
 }
 .iconos img{
     height: 100px;
@@ -64,20 +60,23 @@ body{
         transform: translateY(-7px);
     }
 }
-    
-
-
 @mixin contecuerpo{
     width: 90%;
     display:grid;
     grid-row: row;
     grid-template-rows: 1fr;
+    
 }
-@mixin mainexplab {
+@mixin mainexplab{
     background-color: none;
     padding: 1.2rem;
+    color: $colorletraverde;
+    text-align: justify;
     h2{
-        font-family: 'Oswald', sans-serif;
+        font-family: 'Lato', sans-serif;
+    }
+    p{
+        font-family: 'Bebas Neue', cursive; 
     }   
 }
 
@@ -89,17 +88,7 @@ body{
     .main{
         @include mainexplab;
         grid-area: main;
-        .primero{
-            background-color: rgb(220, 240, 245);
-            width: 400px;
-            height: 650px;
-            
-            font-size: 20px;
-            font-family: 'Oswald', sans-serif;
-            overflow: auto;
-            border: 25px #5f0a87;
-            padding: 25;
-        }
+        
        
     }
 
@@ -177,7 +166,6 @@ body{
         grid-template-columns: 1fr;
         grid-template-rows: auto 2fr auto auto;
         grid-template-areas: 
-        
         "aside2"
         "main2";
     }
@@ -185,9 +173,19 @@ body{
         grid-template-columns: 1fr;
         grid-template-rows: auto 2fr auto auto;
         grid-template-areas: 
-        
         "aside3"
         "main3";
     }
+    .iconos img{
+        height: 70px;
+        width: 70px;
+        align-items: center;
+        &:hover{
+            transform: translateY(-7px);
+        }
+    }
+}
+.cuerpocontacto{
+    padding: 10px;
     
 }
