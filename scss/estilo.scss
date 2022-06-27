@@ -11,6 +11,7 @@ body{
     background-image: $colorpagina;
     max-width: 1000px !important;
     margin:auto;
+    padding: 10px;
 }
 @mixin formtitulo {
     font-family: 'Lato', sans-serif;
@@ -27,11 +28,12 @@ body{
 }
 .textoverde{
     color: $colorletraverde;
+    text-align: justify;
+
 }
 
 .centrado{
-  position: relative;  
-  align-items: center;
+  padding-left: 120px;
 }
 .fotoexp{
     width: 200px;
@@ -56,6 +58,7 @@ body{
 .iconos img{
     height: 100px;
     width: 100px;
+    padding: 5px;
     &:hover{
         transform: translateY(-7px);
     }
@@ -151,6 +154,7 @@ body{
     
     }
 }
+
 @media screen and (max-width:600px){
     
 
@@ -179,13 +183,8 @@ body{
     .iconos img{
         height: 70px;
         width: 70px;
-        align-items: center;
         &:hover{
             transform: translateY(-7px);
         }
     }
-}
-.cuerpocontacto{
-    padding: 10px;
-    
 }

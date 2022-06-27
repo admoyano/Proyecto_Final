@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet"> 
@@ -26,7 +26,7 @@
         <div class="row">
           <nav class="navbar navbar-expand-lg bg-light">
           <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img class="fotoprompt" src="https://i.ibb.co/Q8rJXbF/prompt.png" alt=""></a>
+            <a class="navbar-brand" href="index.html"><img data-aos="zoom-out" data-aos-duration="2000" class="fotoprompt" src="https://i.ibb.co/Q8rJXbF/prompt.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -36,7 +36,7 @@
                   <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="capacitacion.html">Capacitacion</a>
+                  <a class="nav-link" href="capacitacion.html">Capacitación</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="proyectos.html">Proyectos</a>
@@ -57,11 +57,13 @@
     <div class="contenedormain">
         <main class="main">
             <h2>Coordinación de equipos</h2>
-            <h5> OCUPACION ACTUAL, COORDINADOR MESA DE SERVICIOS DE TI., DISTRIBUIDORA DE GAS DEL CENTRO S.A Y DISTRIBUIDORA DE GAS CUYANA S.A. </h5>
-            <p>La coordinación de proyectos es el trabajo diario necesario para mantener una iniciativa encaminada. Cuando se hace correctamente, puede ser útil para agilizar los flujos de trabajo y acelerar la llegada de tu proyecto a la línea de meta. Aprende a dominar seis habilidades esenciales para una buena coordinación de proyectos, como, por ejemplo, cumplir con los plazos y organizar los entregables del proyecto de la mejor manera. organizar y comunicar los detalles con respecto al proyecto y las asignaciones a los participantes, dar seguimiento al progreso del trabajo y al presupuesto del proyecto, documentar los flujos de trabajo clave del proyecto y eliminar cualquier elemento que obstaculice al equipo a cargo del proyecto.</p>
+             <p>La coordinación de proyectos es el trabajo diario necesario para mantener una iniciativa encaminada. Cuando se hace correctamente, puede ser útil para agilizar los flujos de trabajo y acelerar la llegada de tu proyecto a la línea de meta. Aprende a dominar seis habilidades esenciales para una buena coordinación de proyectos, como, por ejemplo, cumplir con los plazos y organizar los entregables del proyecto de la mejor manera. organizar y comunicar los detalles con respecto al proyecto y las asignaciones a los participantes, dar seguimiento al progreso del trabajo y al presupuesto del proyecto, documentar los flujos de trabajo clave del proyecto y eliminar cualquier elemento que obstaculice al equipo a cargo del proyecto.</p>
         </main>
         <aside class="aside">
-            <img class="fotoexp" src="https://i.ibb.co/2gKtMMW/18407421-piezas-de-puzzle-a-unir-espect-culos-trabajo-en-equipo-y-montaje.jpg" />
+            <img data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="2000" class="fotoexp" src="https://i.ibb.co/2gKtMMW/18407421-piezas-de-puzzle-a-unir-espect-culos-trabajo-en-equipo-y-montaje.jpg" />
         </aside>
     </div>
     <div class="contenedormain2">
@@ -80,7 +82,8 @@
         </main>
         
         <aside class="aside2">
-            <img class="fotoexp" src="https://i.ibb.co/jMQQ6Bd/servidores-en-cpd.jpg"/>
+            <img data-aos="fade-up"
+            data-aos-anchor-placement="top-center" class="fotoexp" src="https://i.ibb.co/jMQQ6Bd/servidores-en-cpd.jpg"/>
         </aside>
     </div>
     <div class="contenedormain3">
@@ -94,7 +97,9 @@
         </main>
         
         <aside class="aside3">
-            <img class="fotoexp" src="https://i.ibb.co/WHz65R1/gestion-proyectos.jpg" />
+            <img data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" class="fotoexp" src="https://i.ibb.co/WHz65R1/gestion-proyectos.jpg" />
         </aside>
     </div>
     
@@ -131,7 +136,10 @@
     
     </footer>
     </div>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -56,7 +56,8 @@ footer {
 body {
   background-image: radial-gradient(circle at 51.54% 46.7%, #ffffff 0, #ffffff 12.5%, #ffffff 25%, #ffffff 37.5%, #f9f2f2 50%, #dee3e2 62.5%, #c6d5d3 75%, #b2c9c4 87.5%, #a3bfb6 100%);
   max-width: 1000px !important;
-  margin: auto; }
+  margin: auto;
+  padding: 10px; }
 
 .titulopagina1 {
   font-family: 'Lato', sans-serif;
@@ -72,11 +73,11 @@ body {
   font-family: 'Bebas Neue', cursive; }
 
 .textoverde {
-  color: #728e72; }
+  color: #728e72;
+  text-align: justify; }
 
 .centrado {
-  position: relative;
-  align-items: center; }
+  padding-left: 120px; }
 
 .fotoexp {
   width: 200px;
@@ -100,7 +101,8 @@ body {
 
 .iconos img {
   height: 100px;
-  width: 100px; }
+  width: 100px;
+  padding: 5px; }
   .iconos img:hover {
     transform: translateY(-7px); }
 
@@ -201,10 +203,6 @@ body {
     grid-template-areas: "aside3" "main3"; }
   .iconos img {
     height: 70px;
-    width: 70px;
-    align-items: center; }
+    width: 70px; }
     .iconos img:hover {
       transform: translateY(-7px); } }
-
-.cuerpocontacto {
-  padding: 10px; }
